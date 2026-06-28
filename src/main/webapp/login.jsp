@@ -20,14 +20,16 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: linear-gradient(135deg, #F8FAFC, #EEF2FF);
-}
+background: linear-gradient(135deg, #FFF8F2, #FFE9D6);
+    color: #2C2C2C;
+    }
 
 .login-card {
 	width: 450px;
 	background: white;
 	padding: 45px;
 	border-radius: 25px;
+	border:1px solid blue;
 	box-shadow: 0 20px 50px rgba(124, 58, 237, 0.15);
 	text-align: center;
 }
@@ -95,7 +97,7 @@ body {
 
 .footer-text {
 	margin-top: 22px;
-	color: #64748B;
+	color: black;
 	font-size: 15px;
 	font-weight: 500;
 }

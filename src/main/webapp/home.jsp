@@ -73,10 +73,12 @@ try {
 	font-family: 'Segoe UI', sans-serif;
 }
 
-body {
-	background: linear-gradient(135deg, #F8FAFC, #EEF2FF);
-	color: #1E293B;
-	min-height: 100vh;
+body{
+    background: linear-gradient(135deg, #FFF8F2, #FFE9D6);
+    color: #2C2C2C;
+    
+    
+    min-height: 100vh;
 }
 
 /* Navbar */
@@ -189,7 +191,7 @@ body {
 }
 
 .info-card h3 {
-	color: #F59E0B;
+	color: blue;
 	margin-bottom: 12px;
 	font-size: 18px;
 }
@@ -261,17 +263,83 @@ body {
 }
 
 /* Footer */
-.footer {
-	width: 100%;
-	margin-top: 80px;
-	padding: 30px;
-	background: linear-gradient(135deg, #0F172A, #312E81);
-	color: #FFFFFF;
-	text-align: center;
-	font-size: 17px;
-	font-weight: 600;
-	letter-spacing: 0.5px;
-	box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.15);
+.footer{
+    margin-top:25px;
+   	background: linear-gradient(135deg, #0F172A, #1E293B);
+    color:white;
+    position:relative;
+    overflow:hidden;
+}
+
+.footer-wave{
+    height:8px;
+    background:linear-gradient(90deg,#FBBF24,#F59E0B,#FBBF24);
+}
+
+.footer-content{
+    max-width:1200px;
+    margin:auto;
+    padding:55px 20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:40px;
+}
+
+.footer-box h2,
+.footer-box h3{
+    color:#FBBF24;
+    margin-bottom:18px;
+}
+
+.footer-box p{
+    color:#E5E7EB;
+    line-height:1.8;
+    margin:8px 0;
+}
+
+.footer-box a{
+    display:block;
+    color:#E5E7EB;
+    text-decoration:none;
+    margin:10px 0;
+    transition:.3s;
+}
+
+.footer-box a:hover{
+    color:#FBBF24;
+    transform:translateX(8px);
+}
+
+.social-icons{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+}
+
+.social-icons span{
+    width:50px;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:rgba(255,255,255,.12);
+    font-size:22px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.social-icons span:hover{
+    background:#FBBF24;
+    transform:translateY(-8px) scale(1.1);
+}
+
+.copyright{
+    text-align:center;
+    padding:22px;
+    border-top:1px solid rgba(255,255,255,.15);
+    color:#CBD5E1;
+    font-size:18;
 }
 
 .navbar {
@@ -516,8 +584,67 @@ body {
 
 	</div>
 
-	<div class="footer">© 2026 FoodExpress | Delivering Happiness To
-		Your Doorstep 🚀</div>
+
+
+
+
+
+
+
+
+<div class="footer">
+
+    <div class="footer-wave"></div>
+
+    <div class="footer-content">
+
+        <div class="footer-box">
+            <h2>🍽️ FoodExpress</h2>
+            <p>Fast • Fresh • Delivered</p>
+            <p>Delicious food at your doorstep.</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <a href="home.jsp">🏠 Home</a>
+            <a href="restaurants">🍽 Restaurants</a>
+            <a href="orderHistory">📦 My Orders</a>
+            <a href="profile">👤 Profile</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <p>📧 support@foodexpress.com</p>
+            <p>📞 +91 98765 43210</p>
+            <p>📍 Bengaluru, India</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Follow Us</h3>
+
+            <div class="social-icons">
+                <span>📘</span>
+                <span>📸</span>
+                <span>🐦</span>
+                <span>▶️</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 FoodExpress | All Rights Reserved | Made with ❤️ in India
+    </div>
+
+</div>
+
+
+
+
+
+
+
 
 </body>
 </html>

@@ -26,10 +26,11 @@ int totalItems = 0;
 }
 
 body{
-    background:linear-gradient(135deg,#F8FAFC,#EEF2FF);
+    background: linear-gradient(135deg, #FFF8F2, #FFE9D6);
+    color: #2C2C2C;
     min-height:100vh;
     padding:40px;
-    color:#1E293B;
+   
 }
 
 h1{

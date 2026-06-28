@@ -25,10 +25,10 @@ ArrayList<OrderItem> orderItems = (ArrayList<OrderItem>) request.getAttribute("o
 }
 
 body{
-    background:linear-gradient(135deg,#EEF4FF,#F8FAFF,#F3F0FF);
-    min-height:100vh;
+background: linear-gradient(135deg, #FFF8F2, #FFE9D6);
+    color: #2C2C2C;    min-height:100vh;
     padding:50px;
-    color:#1F2937;
+   
 }
 
 .invoice{

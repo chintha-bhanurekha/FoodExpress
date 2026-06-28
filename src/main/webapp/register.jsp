@@ -16,7 +16,10 @@
 }
 
 body {
-	background: linear-gradient(135deg, #F8FAFC, #EEF2FF);
+
+background: linear-gradient(135deg, #FFF8F2, #FFE9D6);
+    color: #2C2C2C;
+
 	min-height: 100vh;
 	display: flex;
 	justify-content: center;
@@ -29,6 +32,7 @@ body {
 	background: white;
 	padding: 40px;
 	border-radius: 30px;
+	border:1px solid blue;
 	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
 	transition: 0.3s;
 }
@@ -101,7 +105,7 @@ textarea {
 .login-link {
 	text-align: center;
 	margin-top: 25px;
-	color: #64748B;
+	color:black;
 	font-size: 16px;
 }
 

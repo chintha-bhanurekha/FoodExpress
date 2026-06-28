@@ -21,8 +21,8 @@ ArrayList<Restaurant> restaurants = (ArrayList<Restaurant>) request.getAttribute
 }
 
 body {
-	background: linear-gradient(135deg, #F8FAFC, #EEF2FF);
-	color: #1E293B;
+	background: linear-gradient(135deg, #FFF8F2, #FFE9D6);
+    color: #2C2C2C;
 	min-height: 100vh;
 }
 

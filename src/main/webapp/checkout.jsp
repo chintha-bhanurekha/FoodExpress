@@ -32,9 +32,8 @@ body{
 
     padding:50px;
 
-    background:
-    linear-gradient(135deg,#F8FAFC,#EEF2FF,#E0EAFF);
-
+    background: linear-gradient(135deg, #FFF8F2, #FFE9D6);
+    color: #2C2C2C;
 }
 
 /* Checkout Card */

@@ -24,10 +24,13 @@ ArrayList<Menu> menuList = (ArrayList<Menu>) request.getAttribute("menuList");
 }
 
 body{
-    background:linear-gradient(135deg,#F8FAFC,#EEF2FF);
+
+
+background: linear-gradient(135deg, #FFF8F2, #FFE9D6);
+    color: #2C2C2C;
     min-height:100vh;
     padding:30px;
-    color:#1E293B;
+    
 }
 
 h1{
@@ -43,7 +46,7 @@ h1{
 
 .subtitle{
     text-align:center;
-    color:#64748B;
+    color:black;
     font-size:18px;
     margin-bottom:35px;
 }
@@ -75,7 +78,7 @@ td{
     padding:18px;
     text-align:center;
 
-    color:#334155;
+    color:black;
 
     border-bottom:1px solid #E2E8F0;
 

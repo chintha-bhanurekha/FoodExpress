@@ -24,10 +24,10 @@ ArrayList<Menu> menuList = (ArrayList<Menu>) request.getAttribute("menuList");
 }
 
 body {
-	background: linear-gradient(135deg, #F8FAFC, #EEF2FF);
-	min-height: 100vh;
+background: linear-gradient(135deg, #FFF8F2, #FFE9D6);
+    color: #2C2C2C;
 	padding: 30px;
-	color: #1E293B;
+	
 }
 
 /* PAGE TITLE */
@@ -45,6 +45,7 @@ h1 {
 	margin: 0 auto 35px;
 	padding: 45px; ```
 	background: white;
+	border: 1px solid black;
 	border-radius: 30px;
 	box-shadow: 0 20px 50px rgba(124, 58, 237, 0.15);
 	text-align: center;
@@ -115,6 +116,7 @@ h1 {
 	width: 340px; ```
 	background: white;
 	border-radius: 22px;
+	border: 1px solid blue;
 	overflow: hidden;
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 	transition: all 0.4s ease;

@@ -14,96 +14,192 @@ Menu menu = (Menu) request.getAttribute("menu");
 <title>Edit Menu</title>
 
 <style>
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Segoe UI', sans-serif;
+
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
 }
 
-body {
-	background: #071226;
-	min-height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 30px;
+body{
+    background:linear-gradient(135deg,#F8FAFC,#EEF2FF);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
 }
 
-.container {
-	width: 600px;
-	background: #0D1B33;
-	padding: 35px;
-	border-radius: 20px;
-	border: 1px solid #14284A;
-	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+/* Container */
+
+.container{
+    width:650px;
+    background:#fff;
+    border-radius:25px;
+    padding:40px;
+    box-shadow:0 20px 50px rgba(124,58,237,.15);
+    border:1px solid blue;
 }
 
-h1 {
-	text-align: center;
-	color: #ff5722;
-	margin-bottom: 30px;
-	font-size: 42px;
+/* Heading */
+
+h1{
+    text-align:center;
+    font-size:42px;
+    font-weight:800;
+    margin-bottom:35px;
+
+    background:linear-gradient(135deg,#2563EB,#7C3AED);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
 }
 
-.form-group {
-	margin-bottom: 20px;
+/* Form */
+
+.form-group{
+    margin-bottom:22px;
 }
 
-label {
-	display: block;
-	color: #22C55E;
-	margin-bottom: 8px;
-	font-weight: bold;
+label{
+    display:block;
+    margin-bottom:8px;
+    font-size:16px;
+    font-weight:700;
+    color:#334155;
 }
 
-input {
-	width: 100%;
-	padding: 14px;
-	border: none;
-	outline: none;
-	border-radius: 10px;
-	background: #122547;
-	color: white;
-	font-size: 16px;
+input,
+textarea,
+select{
+    width:100%;
+    padding:14px;
+    font-size:16px;
+
+    border:2px solid #CBD5E1;
+    border-radius:12px;
+
+    outline:none;
+
+    transition:.3s;
+
+    background:#F8FAFC;
 }
 
-input:focus {
-	border: 2px solid #ff5722;
+input:focus,
+textarea:focus,
+select:focus{
+
+    border-color:#2563EB;
+
+    background:#fff;
+
+    box-shadow:0 0 12px rgba(37,99,235,.20);
 }
 
-.btn {
-	width: 100%;
-	padding: 14px;
-	background: #ff5722;
-	color: white;
-	border: none;
-	border-radius: 10px;
-	font-size: 18px;
-	font-weight: bold;
-	cursor: pointer;
-	margin-top: 10px;
+textarea{
+    resize:none;
 }
 
-.btn:hover {
-	background: #e64a19;
+/* Update Button */
+
+.btn{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:linear-gradient(135deg,#2563EB,#7C3AED);
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
 }
 
-.back-btn {
-	display: block;
-	text-align: center;
-	margin-top: 20px;
-	padding: 14px;
-	background: #22C55E;
-	color: white;
-	text-decoration: none;
-	border-radius: 10px;
-	font-weight: bold;
+.btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 30px rgba(124,58,237,.30);
 }
 
-.back-btn:hover {
-	background: #16A34A;
+/* Back Button */
+
+.back-btn{
+
+    display:block;
+
+    text-align:center;
+
+    margin-top:18px;
+
+    text-decoration:none;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    background:linear-gradient(135deg,#F59E0B,#FBBF24);
+
+    color:#0F172A;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    transition:.3s;
 }
+
+.back-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(245,158,11,.35);
+}
+
+/* Responsive */
+
+@media(max-width:700px){
+
+    body{
+        padding:20px;
+    }
+
+    .container{
+        width:100%;
+        padding:25px;
+    }
+
+    h1{
+        font-size:34px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 </style>
 
 </head>

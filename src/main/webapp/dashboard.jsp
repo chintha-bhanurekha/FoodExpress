@@ -24,7 +24,10 @@ double revenue = (Double) request.getAttribute("revenue");
 }
 
 body{
-    background:linear-gradient(135deg,#F8FAFC,#EEF2FF);
+
+
+background: linear-gradient(135deg, #FFF8F2, #FFE9D6);
+    color: #2C2C2C;
     min-height:100vh;
     padding:40px;
     color:#1E293B;
@@ -45,8 +48,9 @@ h1{
 
 .subtitle{
     text-align:center;
-    color:#64748B;
-    font-size:18px;
+    color:black;
+    font-size:20px;
+    font-weight:20px;
     margin-bottom:50px;
 }
 
@@ -98,7 +102,7 @@ h1{
 /* Titles */
 
 .card h2{
-    color:#2563EB;
+    color:light-green;
     font-size:24px;
     font-weight:700;
     margin-bottom:15px;
@@ -109,6 +113,7 @@ h1{
 .count{
     font-size:62px;
     font-weight:800;
+    
 
     background:linear-gradient(135deg,#2563EB,#7C3AED);
 
