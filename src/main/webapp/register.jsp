@@ -58,7 +58,7 @@ h1 {
 label {
 	display: block;
 	margin-bottom: 8px;
-	color: #2563EB;
+	color: orange;
 	font-size: 17px;
 	font-weight: 700;
 }

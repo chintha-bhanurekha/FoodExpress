@@ -43,41 +43,40 @@ public class UserDAO {
 
 	public User loginUser(String email, String password) {
 
-		User user = null;
+	    User user = null;
 
-		try {
+	    try {
 
-			Connection con = DBConnection.getConnection();
+	        Connection con = DBConnection.getConnection();
 
-			String query = "SELECT * FROM users WHERE email=? AND password=?";
+	        String query = "SELECT * FROM users WHERE email=? AND password=?";
 
-			PreparedStatement ps = con.prepareStatement(query);
+	        PreparedStatement ps = con.prepareStatement(query);
 
-			ps.setString(1, email);
-			ps.setString(2, password);
+	        ps.setString(1, email);
+	        ps.setString(2, password);
 
-			ResultSet rs = ps.executeQuery();
+	        ResultSet rs = ps.executeQuery();
 
-			if (rs.next()) {
+	        if (rs.next()) {
 
-				user = new User();
+	            user = new User();
 
-				user.setUserId(rs.getInt("user_id"));
-				user.setName(rs.getString("name"));
-				user.setEmail(rs.getString("email"));
-				user.setPassword(rs.getString("password"));
-				user.setPhone(rs.getString("phone"));
-				user.setAddress(rs.getString("address"));
-				user.setRole(rs.getString("role"));
-			}
+	            user.setUserId(rs.getInt("user_id"));
+	            user.setName(rs.getString("name"));
+	            user.setEmail(rs.getString("email"));
+	            user.setPassword(rs.getString("password"));
+	            user.setPhone(rs.getString("phone"));
+	            user.setAddress(rs.getString("address"));
+	            user.setRole(rs.getString("role"));
+	        }
 
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    }
 
-		return user;
+	    return user;
 	}
-
 	public boolean updateUser(User user) {
 
 		boolean status = false;

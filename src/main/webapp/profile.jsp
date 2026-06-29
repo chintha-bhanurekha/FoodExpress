@@ -130,8 +130,6 @@ h1 {
 
 
 
-
-
 .home-btn:hover {
 	transform: translateY(-4px);
 	box-shadow: 0 12px 30px rgba(34, 197, 94, 0.25);

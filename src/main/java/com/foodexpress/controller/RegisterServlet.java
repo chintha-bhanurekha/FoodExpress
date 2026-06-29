@@ -2,6 +2,7 @@ package com.foodexpress.controller;
 
 import java.io.IOException;
 
+
 import com.foodexpress.dao.UserDAO;
 import com.foodexpress.model.User;
 
@@ -21,6 +22,8 @@ public class RegisterServlet extends HttpServlet {
 		String name = request.getParameter("name");
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
+		
+		
 		String phone = request.getParameter("phone");
 		String address = request.getParameter("address");
 

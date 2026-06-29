@@ -102,6 +102,8 @@ body {
 }
 
 /* Search */
+
+
 .search-box input[type=text] {
 	width: 500px;
 	max-width: 90%;
@@ -114,12 +116,18 @@ body {
 
 .search-box input[type=submit] {
 	padding: 16px 28px;
-	border: none;
+	border: 1px solid black;
 	border-radius: 12px;
 	cursor: pointer;
-	font-weight: 600;
+	
 	background: linear-gradient(135deg, #F59E0B, #FBBF24);
+	
+	
+	
+	
 	color: #0F172A;
+	font-size: 16px;
+	font-weight: 700;
 }
 
 .search-box input[type=submit]:hover {
@@ -132,7 +140,7 @@ body {
 	text-align: center;
 	margin: 25px;
 	text-decoration: none;
-	color: #2563EB;
+	color: orange;
 	font-size: 18px;
 	font-weight: 700;
 }
